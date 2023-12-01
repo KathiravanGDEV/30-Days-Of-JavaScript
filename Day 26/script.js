@@ -1,12 +1,17 @@
 //JavaScript Function calculateTotal that takes an array of numbers,
 //filters out he even numbers, squares the remaining numbers, and then calculates their sum.
 function calculateTotal(arr) {
+  //getting odd numbers
   let oddNum = arr.filter(function (num) {
     return num % 2 !== 0;
   });
+
+  //getting the squares if the odd numbers
   let squares = oddNum.map(function (num) {
     return num ** 2;
   });
+
+  //getting sum of all the squared numbers
   let sum = squares.reduce(function (accSum, currNum) {
     return accSum + currNum;
   });
