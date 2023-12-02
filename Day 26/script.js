@@ -11,7 +11,7 @@ function calculateTotal(arr) {
     return num ** 2;
   });
 
-  //getting sum of all the squared numbers
+  //getting sum of all the squared
   let sum = squares.reduce(function (accSum, currNum) {
     return accSum + currNum;
   });
